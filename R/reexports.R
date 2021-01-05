@@ -2,6 +2,10 @@
 #' @export
 cli::cli_alert
 
+#' @importFrom cli cli_alert_danger
+#' @export
+cli::cli_alert_danger
+
 #' @importFrom cli cli_alert_info
 #' @export
 cli::cli_alert_info

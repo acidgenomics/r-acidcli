@@ -2,12 +2,15 @@
 % Please edit documentation in R/alert.R
 \name{alert}
 \alias{alert}
+\alias{alertDanger}
 \alias{alertInfo}
 \alias{alertSuccess}
 \alias{alertWarning}
 \title{Allert messages}
 \usage{
 alert(x)
+
+alertDanger(x)
 
 alertInfo(x)
 
