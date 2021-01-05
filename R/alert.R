@@ -5,13 +5,13 @@
 #'
 #' @param x `character`.
 #'
+#' @return Console output, with invisible return of `x` input.
+#'
 #' @seealso
 #' - [cli::cli_alert()].
 #' - [cli::cli_alert_info()].
 #' - [cli::cli_alert_success()].
 #' - [cli::cli_alert_warning()].
-#'
-#' @return Console output, with invisible return of `x` input.
 #'
 #' @examples
 #' x <- "hello world"

@@ -14,8 +14,10 @@ ol(x)
 ul(x)
 }
 \arguments{
-\item{x}{\code{character(1)}.
-Text to be displayed as list items.}
+\item{x}{\code{character}.}
+}
+\value{
+Console output, with invisible return of \code{x} input.
 }
 \description{
 Lists
@@ -25,5 +27,6 @@ Updated 2021-01-04.
 }
 \examples{
 dl(c(a = "AAA", b = "BBB"))
+ol(c("Item 1", "Item 2"))
 ul(c("Item 1", "Item 2"))
 }

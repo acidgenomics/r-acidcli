@@ -1,20 +1,27 @@
 #' CLI text
 #'
 #' @name text
-#' @note Exporting `txt` instead of `text` here, to avoid masking `stats::text`.
 #' @note Updated 2020-01-05.
 #'
+#' @param x `character`.
+#'
+#' @return Console output, with invisible return of `x` input.
+#'
 #' @examples
-#' txt("hello world")
+#' ## Wrapping
+#' txt(c("hello", " world"))
+#'
+#' ## No wrapping
 #' verbatim(c("hello", "world"))
 NULL
 
 
 
 #' @describeIn text Print to screen, wrapping to screen with automatically.
+#'   Exporting `txt` instead of `text` here, to avoid masking `stats::text`.
 #' @export
 txt <- function(x) {
-    stopifnot(.isString(x))
+    stopifnot(is.character(x))
     cli_text(x)
     invisible(x)
 }
