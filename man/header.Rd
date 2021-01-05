@@ -26,8 +26,10 @@ h6(x)
 h7(x)
 }
 \arguments{
-\item{x}{\code{character}.
-Text to display as header.}
+\item{x}{\code{character}.}
+}
+\value{
+Console output, with invisible return of \code{x} input.
 }
 \description{
 Header level

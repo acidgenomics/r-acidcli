@@ -10,22 +10,30 @@ txt(x)
 
 verbatim(x)
 }
+\arguments{
+\item{x}{\code{character}.}
+}
+\value{
+Console output, with invisible return of \code{x} input.
+}
 \description{
 CLI text
 }
 \section{Functions}{
 \itemize{
 \item \code{txt}: Print to screen, wrapping to screen with automatically.
+Exporting \code{txt} instead of \code{text} here, to avoid masking \code{stats::text}.
 
 \item \code{verbatim}: Print to screen, without any automatic wrapping.
 }}
 
 \note{
-Exporting \code{txt} instead of \code{text} here, to avoid masking \code{stats::text}.
-
 Updated 2020-01-05.
 }
 \examples{
-txt("hello world")
+## Wrapping
+txt(c("hello", " world"))
+
+## No wrapping
 verbatim(c("hello", "world"))
 }

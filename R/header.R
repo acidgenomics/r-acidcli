@@ -4,7 +4,8 @@
 #' @note Updated 2021-01-04.
 #'
 #' @param x `character`.
-#'   Text to display as header.
+#'
+#' @return Console output, with invisible return of `x` input.
 #'
 #' @seealso
 #' - [cli::cli_h1()], [cli::cli_h2()], [cli::cli_h3()].
@@ -30,11 +31,12 @@ NULL
 
 
 .h <- function(x, level) {
+    stopifnot(is.character(x))
     arrow <- magenta(paste0(paste0(rep("=", level), collapse = ""), ">"))
     lapply(
         X = x,
         FUN = function(x) {
-            cat(paste0(.emoji, " ", arrow, " ", x, "\n"))
+            verbatim(paste0(.emoji, " ", arrow, " ", x, "\n"))
         }
     )
     invisible(x)
@@ -45,7 +47,7 @@ NULL
 #' @rdname header
 #' @export
 h1 <- function(x) {
-    cat("\n")
+    verbatim("\n")
     .h(x = x, level = 1L)
 }
 

@@ -3,11 +3,13 @@
 #' @name list
 #' @note Updated 2021-01-04.
 #'
-#' @param x `character(1)`.
-#'   Text to be displayed as list items.
+#' @param x `character`.
+#'
+#' @return Console output, with invisible return of `x` input.
 #'
 #' @examples
 #' dl(c(a = "AAA", b = "BBB"))
+#' ol(c("Item 1", "Item 2"))
 #' ul(c("Item 1", "Item 2"))
 NULL
 
@@ -18,7 +20,7 @@ NULL
 dl <- function(x) {
     stopifnot(
         is.character(x),
-        isTRUE(nzchar(names(x)))
+        isTRUE(all(nzchar(names(x))))
     )
     cli_dl(x)
     invisible(x)
