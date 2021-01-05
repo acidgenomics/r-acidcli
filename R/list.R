@@ -21,6 +21,20 @@ dl <- function(x) {
         isTRUE(nzchar(names(x)))
     )
     cli_dl(x)
+    invisible(x)
+}
+
+
+
+#' @rdname list
+#' @export
+ol <- function(x) {
+    stopifnot(is.character(x))
+    indent <- 4L
+    cli_div(theme = list(body = list("margin-left" = indent)))
+    cli_ol(items = x)
+    cli_end()
+    invisible(x)
 }
 
 

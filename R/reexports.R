@@ -38,6 +38,10 @@ cli::cli_h2
 #' @export
 cli::cli_h3
 
+#' @importFrom cli cli_ol
+#' @export
+cli::cli_ol
+
 #' @importFrom cli cli_text
 #' @export
 cli::cli_text
