@@ -17,6 +17,7 @@ NULL
 alert <- function(x) {
     stopifnot(.isString(x))
     cli_alert(x)
+    invisible(x)
 }
 
 
@@ -26,6 +27,7 @@ alert <- function(x) {
 alertInfo <- function(x) {
     stopifnot(.isString(x))
     cli_alert_info(x)
+    invisible(x)
 }
 
 
@@ -35,6 +37,7 @@ alertInfo <- function(x) {
 alertSuccess <- function(x) {
     stopifnot(.isString(x))
     cli_alert_success(x)
+    invisible(x)
 }
 
 
@@ -44,4 +47,5 @@ alertSuccess <- function(x) {
 alertWarning <- function(x) {
     stopifnot(.isString(x))
     cli_alert_warning(x)
+    invisible(x)
 }

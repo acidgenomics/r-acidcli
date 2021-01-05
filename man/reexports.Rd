@@ -13,6 +13,7 @@
 \alias{cli_h1}
 \alias{cli_h2}
 \alias{cli_h3}
+\alias{cli_ol}
 \alias{cli_text}
 \alias{cli_ul}
 \alias{cli_verbatim}
@@ -31,7 +32,7 @@ These objects are imported from other packages. Follow the links
 below to see their documentation.
 
 \describe{
-  \item{cli}{\code{\link[cli]{cli_alert}}, \code{\link[cli:cli_alert]{cli_alert_info}}, \code{\link[cli:cli_alert]{cli_alert_success}}, \code{\link[cli:cli_alert]{cli_alert_warning}}, \code{\link[cli]{cli_div}}, \code{\link[cli]{cli_dl}}, \code{\link[cli]{cli_end}}, \code{\link[cli]{cli_h1}}, \code{\link[cli:cli_h1]{cli_h2}}, \code{\link[cli:cli_h1]{cli_h3}}, \code{\link[cli]{cli_text}}, \code{\link[cli]{cli_ul}}, \code{\link[cli]{cli_verbatim}}}
+  \item{cli}{\code{\link[cli]{cli_alert}}, \code{\link[cli:cli_alert]{cli_alert_info}}, \code{\link[cli:cli_alert]{cli_alert_success}}, \code{\link[cli:cli_alert]{cli_alert_warning}}, \code{\link[cli]{cli_div}}, \code{\link[cli]{cli_dl}}, \code{\link[cli]{cli_end}}, \code{\link[cli]{cli_h1}}, \code{\link[cli:cli_h1]{cli_h2}}, \code{\link[cli:cli_h1]{cli_h3}}, \code{\link[cli]{cli_ol}}, \code{\link[cli]{cli_text}}, \code{\link[cli]{cli_ul}}, \code{\link[cli]{cli_verbatim}}}
 
   \item{crayon}{\code{\link[crayon:crayon]{blue}}, \code{\link[crayon:crayon]{bold}}, \code{\link[crayon:crayon]{cyan}}, \code{\link[crayon:crayon]{green}}, \code{\link[crayon:crayon]{magenta}}, \code{\link[crayon:crayon]{red}}, \code{\link[crayon:crayon]{underline}}, \code{\link[crayon:crayon]{yellow}}}
 }}
