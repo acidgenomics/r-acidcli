@@ -24,6 +24,16 @@ alert <- function(x) {
 
 #' @rdname alert
 #' @export
+alertDanger <- function(x) {
+    stopifnot(.isString(x))
+    cli_alert_danger(x)
+    invisible(x)
+}
+
+
+
+#' @rdname alert
+#' @export
 alertInfo <- function(x) {
     stopifnot(.isString(x))
     cli_alert_info(x)

@@ -5,7 +5,7 @@
 #' @note Updated 2020-01-05.
 #'
 #' @examples
-#' txt("hello world"))
+#' txt("hello world")
 #' verbatim(c("hello", "world"))
 NULL
 
@@ -14,7 +14,7 @@ NULL
 #' @describeIn text Print to screen, wrapping to screen with automatically.
 #' @export
 txt <- function(x) {
-    stopifnot(is.character(x))
+    stopifnot(.isString(x))
     cli_text(x)
     invisible(x)
 }

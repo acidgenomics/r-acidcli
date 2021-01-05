@@ -26,6 +26,6 @@ Exporting \code{txt} instead of \code{text} here, to avoid masking \code{stats::
 Updated 2020-01-05.
 }
 \examples{
-txt("hello world"))
+txt("hello world")
 verbatim(c("hello", "world"))
 }
