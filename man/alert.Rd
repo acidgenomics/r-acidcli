@@ -6,7 +6,7 @@
 \alias{alertInfo}
 \alias{alertSuccess}
 \alias{alertWarning}
-\title{Allert messages}
+\title{Alert messages}
 \usage{
 alert(x)
 
@@ -18,11 +18,25 @@ alertSuccess(x)
 
 alertWarning(x)
 }
+\arguments{
+\item{x}{\code{character}.}
+}
+\value{
+Console output, with invisible return of \code{x} input.
+}
 \description{
-Allert messages
+Alert messages
 }
 \note{
 Updated 2021-01-05.
+}
+\examples{
+x <- "hello world"
+alert(x)
+alertDanger(x)
+alertInfo(x)
+alertSuccess(x)
+alertWarning(x)
 }
 \seealso{
 \itemize{
