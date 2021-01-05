@@ -1,13 +1,25 @@
-#' Allert messages
+#' Alert messages
 #'
 #' @name alert
 #' @note Updated 2021-01-05.
+#'
+#' @param x `character`.
 #'
 #' @seealso
 #' - [cli::cli_alert()].
 #' - [cli::cli_alert_info()].
 #' - [cli::cli_alert_success()].
 #' - [cli::cli_alert_warning()].
+#'
+#' @return Console output, with invisible return of `x` input.
+#'
+#' @examples
+#' x <- "hello world"
+#' alert(x)
+#' alertDanger(x)
+#' alertInfo(x)
+#' alertSuccess(x)
+#' alertWarning(x)
 NULL
 
 
@@ -15,8 +27,8 @@ NULL
 #' @rdname alert
 #' @export
 alert <- function(x) {
-    stopifnot(.isString(x))
-    cli_alert(x)
+    stopifnot(is.character(x))
+    lapply(X = x, FUN = cli_alert)
     invisible(x)
 }
 
@@ -25,8 +37,8 @@ alert <- function(x) {
 #' @rdname alert
 #' @export
 alertDanger <- function(x) {
-    stopifnot(.isString(x))
-    cli_alert_danger(x)
+    stopifnot(is.character(x))
+    lapply(X = x, FUN = cli_alert_danger)
     invisible(x)
 }
 
@@ -35,8 +47,8 @@ alertDanger <- function(x) {
 #' @rdname alert
 #' @export
 alertInfo <- function(x) {
-    stopifnot(.isString(x))
-    cli_alert_info(x)
+    stopifnot(is.character(x))
+    lapply(X = x, FUN = cli_alert_info)
     invisible(x)
 }
 
@@ -45,8 +57,8 @@ alertInfo <- function(x) {
 #' @rdname alert
 #' @export
 alertSuccess <- function(x) {
-    stopifnot(.isString(x))
-    cli_alert_success(x)
+    stopifnot(is.character(x))
+    lapply(X = x, FUN = cli_alert_success)
     invisible(x)
 }
 
@@ -55,7 +67,7 @@ alertSuccess <- function(x) {
 #' @rdname alert
 #' @export
 alertWarning <- function(x) {
-    stopifnot(.isString(x))
-    cli_alert_warning(x)
+    stopifnot(is.character(x))
+    lapply(X = x, FUN = cli_alert_warning)
     invisible(x)
 }
