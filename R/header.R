@@ -1,7 +1,7 @@
 #' Header level
 #'
 #' @name header
-#' @note Updated 2021-01-04.
+#' @note Updated 2021-01-07.
 #'
 #' @param x `character`.
 #'
@@ -30,13 +30,17 @@ NULL
 
 
 
+#' Internal header generator
+#'
+#' @note Updated 2021-01-07.
+#' @noRd
 .h <- function(x, level) {
     stopifnot(is.character(x))
     arrow <- magenta(paste0(paste0(rep("=", level), collapse = ""), ">"))
     lapply(
         X = x,
         FUN = function(x) {
-            verbatim(paste0(.emoji, " ", arrow, " ", x, "\n"))
+            txt(paste0(.emoji, " ", arrow, " ", x, "\n"))
         }
     )
     invisible(x)
