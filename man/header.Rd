@@ -35,7 +35,7 @@ Console output, with invisible return of \code{x} input.
 Header level
 }
 \note{
-Updated 2021-01-04.
+Updated 2021-01-07.
 }
 \examples{
 h1("Level 1")
