@@ -1,3 +1,9 @@
+## AcidCLI 0.0.04 (2021-01-10)
+
+### Minor changes
+
+- `toInlineString`: Include "..." when input is truncated.
+
 ## AcidCLI 0.0.3 (2021-01-10)
 
 ### New functions
