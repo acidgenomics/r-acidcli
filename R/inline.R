@@ -21,8 +21,12 @@ toInlineString <- function(x, n = Inf, class = "var") {
         is.integer(n) || is.infinite(n),
         .isString(class)
     )
+    truncate <- length(x) > n
     x <- head(x, n = n)
     x <- paste0("{.", class, " ", x, "}")
     x <- paste(x, collapse = ", ")
+    if (isTRUE(truncate)) {
+        x <- paste0(x, "...")
+    }
     x
 }
