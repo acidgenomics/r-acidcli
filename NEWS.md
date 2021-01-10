@@ -1,3 +1,9 @@
+## AcidCLI 0.0.3 (2021-01-10)
+
+### New functions
+
+- Added `toInlineString`, which helps return a formatted inline variable string.
+
 ## AcidCLI 0.0.2 (2021-01-07)
 
 ### Minor changes
