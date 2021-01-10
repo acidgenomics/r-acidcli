@@ -4,4 +4,5 @@
 #'   cli_alert_warning cli_div cli_dl cli_end cli_ol cli_text cli_ul
 #'   cli_verbatim
 #' @importFrom crayon magenta
+#' @importFrom utils head
 NULL
