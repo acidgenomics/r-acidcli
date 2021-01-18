@@ -1,7 +1,7 @@
 #' Lists
 #'
 #' @name list
-#' @note Updated 2021-01-04.
+#' @note Updated 2021-01-18.
 #'
 #' @param x `character`.
 #'
@@ -22,7 +22,10 @@ dl <- function(x) {
         is.character(x),
         isTRUE(all(nzchar(names(x))))
     )
-    cli_dl(x)
+    indent <- 4L
+    cli_div(theme = list(body = list("margin-left" = indent)))
+    cli_dl(items = x)
+    cli_end()
     invisible(x)
 }
 
