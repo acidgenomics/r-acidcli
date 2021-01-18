@@ -1,4 +1,10 @@
-## AcidCLI 0.0.04 (2021-01-10)
+## AcidCLI 0.0.5 (2021-01-18)
+
+### Minor changes
+
+- `dl`: Ensure definition list is indented.
+
+## AcidCLI 0.0.4 (2021-01-10)
 
 ### Minor changes
 
