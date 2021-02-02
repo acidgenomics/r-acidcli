@@ -1,7 +1,7 @@
 #' Header level
 #'
 #' @name header
-#' @note Updated 2021-01-07.
+#' @note Updated 2021-02-02.
 #'
 #' @param x `character`.
 #'
@@ -32,10 +32,10 @@ NULL
 
 #' Internal header generator
 #'
-#' @note Updated 2021-01-07.
+#' @note Updated 2021-02-02.
 #' @noRd
 .h <- function(x, level) {
-    stopifnot(is.character(x))
+    assert(isCharacter(x))
     arrow <- magenta(paste0(paste0(rep("=", level), collapse = ""), ">"))
     lapply(
         X = x,

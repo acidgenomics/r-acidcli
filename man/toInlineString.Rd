@@ -22,7 +22,7 @@ Inline style class.}
 Convert input to inline class string
 }
 \note{
-Updated 2021-01-10.
+Updated 2021-02-02.
 }
 \examples{
 x <- c("aaa", "bbb", "ccc", "ddd")

@@ -1,7 +1,7 @@
 #' CLI text
 #'
 #' @name text
-#' @note Updated 2020-01-05.
+#' @note Updated 2020-02-02.
 #'
 #' @param x `character`.
 #'
@@ -21,7 +21,7 @@ NULL
 #'   Exporting `txt` instead of `text` here, to avoid masking `stats::text`.
 #' @export
 txt <- function(x) {
-    stopifnot(is.character(x))
+    assert(isCharacter(x))
     cli_text(x)
     invisible(x)
 }
@@ -31,7 +31,7 @@ txt <- function(x) {
 #' @describeIn text Print to screen, without any automatic wrapping.
 #' @export
 verbatim <- function(x) {
-    stopifnot(is.character(x))
+    assert(isCharacter(x))
     cli_verbatim(x)
     invisible(x)
 }

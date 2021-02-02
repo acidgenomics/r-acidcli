@@ -1,7 +1,7 @@
 #' Alert messages
 #'
 #' @name alert
-#' @note Updated 2021-01-05.
+#' @note Updated 2021-02-02.
 #'
 #' @param x `character`.
 #'
@@ -27,7 +27,7 @@ NULL
 #' @rdname alert
 #' @export
 alert <- function(x) {
-    stopifnot(is.character(x))
+    assert(isCharacter(x))
     lapply(X = x, FUN = cli_alert)
     invisible(x)
 }
@@ -37,7 +37,7 @@ alert <- function(x) {
 #' @rdname alert
 #' @export
 alertDanger <- function(x) {
-    stopifnot(is.character(x))
+    assert(isCharacter(x))
     lapply(X = x, FUN = cli_alert_danger)
     invisible(x)
 }
@@ -47,7 +47,7 @@ alertDanger <- function(x) {
 #' @rdname alert
 #' @export
 alertInfo <- function(x) {
-    stopifnot(is.character(x))
+    assert(isCharacter(x))
     lapply(X = x, FUN = cli_alert_info)
     invisible(x)
 }
@@ -57,7 +57,7 @@ alertInfo <- function(x) {
 #' @rdname alert
 #' @export
 alertSuccess <- function(x) {
-    stopifnot(is.character(x))
+    assert(isCharacter(x))
     lapply(X = x, FUN = cli_alert_success)
     invisible(x)
 }
@@ -67,7 +67,7 @@ alertSuccess <- function(x) {
 #' @rdname alert
 #' @export
 alertWarning <- function(x) {
-    stopifnot(is.character(x))
+    assert(isCharacter(x))
     lapply(X = x, FUN = cli_alert_warning)
     invisible(x)
 }

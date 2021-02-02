@@ -28,7 +28,7 @@ Exporting \code{txt} instead of \code{text} here, to avoid masking \code{stats::
 }}
 
 \note{
-Updated 2020-01-05.
+Updated 2020-02-02.
 }
 \examples{
 ## Wrapping

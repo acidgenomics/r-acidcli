@@ -23,7 +23,7 @@ Console output, with invisible return of \code{x} input.
 Lists
 }
 \note{
-Updated 2021-01-18.
+Updated 2021-02-02.
 }
 \examples{
 dl(c(a = "AAA", b = "BBB"))

@@ -28,7 +28,7 @@ Console output, with invisible return of \code{x} input.
 Alert messages
 }
 \note{
-Updated 2021-01-05.
+Updated 2021-02-02.
 }
 \examples{
 x <- "hello world"
