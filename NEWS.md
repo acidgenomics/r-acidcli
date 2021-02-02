@@ -1,3 +1,9 @@
+## AcidCLI 0.0.6 (2021-02-02)
+
+### Minor changes
+
+- Now using goalie package internally for assert checks.
+
 ## AcidCLI 0.0.5 (2021-01-18)
 
 ### Minor changes
