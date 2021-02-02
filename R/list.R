@@ -1,7 +1,7 @@
 #' Lists
 #'
 #' @name list
-#' @note Updated 2021-01-18.
+#' @note Updated 2021-02-02.
 #'
 #' @param x `character`.
 #'
@@ -18,9 +18,9 @@ NULL
 #' @rdname list
 #' @export
 dl <- function(x) {
-    stopifnot(
-        is.character(x),
-        isTRUE(all(nzchar(names(x))))
+    assert(
+        isCharacter(x),
+        hasNames(x)
     )
     indent <- 4L
     cli_div(theme = list(body = list("margin-left" = indent)))
@@ -34,7 +34,7 @@ dl <- function(x) {
 #' @rdname list
 #' @export
 ol <- function(x) {
-    stopifnot(is.character(x))
+    assert(isCharacter(x))
     indent <- 4L
     cli_div(theme = list(body = list("margin-left" = indent)))
     cli_ol(items = x)
@@ -47,7 +47,7 @@ ol <- function(x) {
 #' @rdname list
 #' @export
 ul <- function(x) {
-    stopifnot(is.character(x))
+    assert(isCharacter(x))
     indent <- 4L
     cli_div(theme = list(body = list("margin-left" = indent)))
     cli_ul(items = x)

@@ -1,6 +1,6 @@
 #' Convert input to inline class string
 #'
-#' @note Updated 2021-01-10.
+#' @note Updated 2021-02-02.
 #' @export
 #'
 #' @param x `character`.
@@ -16,10 +16,10 @@
 #' x <- toInlineString(x, n = 3L)
 #' x
 toInlineString <- function(x, n = Inf, class = "var") {
-    stopifnot(
-        is.character(x),
-        is.integer(n) || is.infinite(n),
-        .isString(class)
+    assert(
+        isCharacter(x),
+        isInt(n),
+        isString(class)
     )
     truncate <- length(x) > n
     x <- head(x, n = n)
