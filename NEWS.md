@@ -1,3 +1,11 @@
+## AcidCLI 0.1.0 (2021-02-26)
+
+### Minor changes
+
+- Package up initial release suitable for bioconda.
+- Updated goalie dependency.
+- Added package documentation information to manual.
+
 ## AcidCLI 0.0.6 (2021-02-02)
 
 ### Minor changes
