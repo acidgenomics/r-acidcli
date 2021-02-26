@@ -11,8 +11,8 @@ Command line interface helpers for Acid Genomics packages.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://r.acidgenomics.com/packages/acidcli/
-    https://github.com/acidgenomics/r-acidcli/}
+  \item \url{https://r.acidgenomics.com/packages/acidcli/}
+  \item \url{https://github.com/acidgenomics/r-acidcli/}
   \item Report bugs at \url{https://github.com/acidgenomics/r-acidcli/issues/}
 }
 
