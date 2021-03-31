@@ -1,3 +1,9 @@
+## AcidCLI 0.1.1 (2021-03-31)
+
+### Minor changes
+
+- Changed `=>` to `#`, improving consistency with koopa shell bootloader.
+
 ## AcidCLI 0.1.0 (2021-02-26)
 
 ### Minor changes

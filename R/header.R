@@ -32,15 +32,15 @@ NULL
 
 #' Internal header generator
 #'
-#' @note Updated 2021-02-02.
+#' @note Updated 2021-03-31.
 #' @noRd
 .h <- function(x, level) {
     assert(isCharacter(x))
-    arrow <- magenta(paste0(paste0(rep("=", level), collapse = ""), ">"))
+    prefix <- magenta(paste0(rep("#", level), collapse = ""))
     lapply(
         X = x,
         FUN = function(x) {
-            txt(paste0(.emoji, " ", arrow, " ", x, "\n"))
+            txt(paste0(.emoji, " ", prefix, " ", x, "\n"))
         }
     )
     invisible(x)
