@@ -1,0 +1,7 @@
+#+TITLE: AcidCLI
+#+STARTUP: content
+* Development
+** Add wrappers for these new functions from cli update:
+    cli_abort
+    cli_warn
+    cli_inform
