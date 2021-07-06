@@ -1,3 +1,12 @@
+## FIXME Potentially need to update:
+##
+## - r-bcbiobase
+## - r-cbioportalanalysis
+## - r-cellosaurus
+## - r-wormbase
+##
+## Then these cli reexports are safe to remove.
+
 #' @importFrom cli cli_alert
 #' @export
 cli::cli_alert
