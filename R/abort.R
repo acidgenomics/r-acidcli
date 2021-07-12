@@ -25,21 +25,32 @@ NULL
 
 
 
+## NOTE Consider adding support for "i" and "x" named arguments here.
+
 #' @rdname abort
 #' @export
-abort <- function() {
+abort <- function(x) {
+    assert(isCharacter(x))
+    x <- paste(x, collapse = "\n")
+    cli_abort(x)
 }
 
 
 
 #' @rdname abort
 #' @export
-inform <- function() {
+inform <- function(x) {
+    assert(isCharacter(x))
+    lapply(X = x, FUN = cli_inform)
+    invisible(x)
 }
 
 
 
 #' @rdname abort
 #' @export
-warn <- function() {
+warn <- function(x) {
+    assert(isCharacter(x))
+    lapply(X = x, FUN = cli_warn)
+    invisible(x)
 }
