@@ -1,3 +1,11 @@
+## AcidCLI 0.1.2 (2021-07-12)
+
+Added wrappers for new rlang-inspired handlers:
+
+- `abort` wraps `cli_abort`.
+- `inform` wraps `cli_inform`.
+- `warn` wraps `cli_warn`.
+
 ## AcidCLI 0.1.1 (2021-03-31)
 
 ### Minor changes
