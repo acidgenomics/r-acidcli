@@ -3,7 +3,3 @@
 * Development
 ** TODO Replace all instances of `message` and `stop` with AcidCLI wrapped
    variants that support better styling.
-** TODO Add wrappers for these new functions from cli update:
-    cli_abort
-    cli_warn
-    cli_inform
