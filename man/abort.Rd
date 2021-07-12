@@ -6,11 +6,11 @@
 \alias{warn}
 \title{Signal an error, warning, or message with cli formatting}
 \usage{
-abort()
+abort(x)
 
-inform()
+inform(x)
 
-warn()
+warn(x)
 }
 \arguments{
 \item{x}{\code{character}.}
