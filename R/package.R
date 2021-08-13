@@ -7,5 +7,6 @@
 #'   cli_ol cli_text cli_ul cli_verbatim cli_warn
 #' @importFrom crayon magenta
 #' @importFrom goalie assert isCharacter hasNames isInt isString
+#' @importFrom methods is
 #' @importFrom utils head
 "_PACKAGE"
