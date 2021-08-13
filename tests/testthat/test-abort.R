@@ -2,7 +2,7 @@ context("abort")
 
 test_that("abort", {
     expect_error(
-        object = abort("XXX"),
+        object = abort(c("XXX", "YYY")),
         regexp = "XXX"
     )
     expect_error(
@@ -13,7 +13,7 @@ test_that("abort", {
 
 test_that("inform", {
     expect_message(
-        object = inform("XXX"),
+        object = inform(c("XXX", "YYY")),
         regexp = "XXX"
     )
     expect_message(
@@ -24,7 +24,7 @@ test_that("inform", {
 
 test_that("warn", {
     expect_warning(
-        object = warn("XXX"),
+        object = warn(c("XXX", "YYY")),
         regexp = "XXX"
     )
     expect_warning(
