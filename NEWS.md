@@ -1,4 +1,14 @@
+## AcidCLI 0.1.3 (2021-08-13)
+
+### Minor changes
+
+- `abort`, `inform`, `warn` now support `condition` class (e.g. `simpleError`)
+  as an input source, which is useful for handoff in `tryCatch` calls.
+- Added testthat code coverage. Package coverage is currently 100%.
+
 ## AcidCLI 0.1.2 (2021-07-12)
+
+### New functions
 
 Added wrappers for new rlang-inspired handlers:
 
