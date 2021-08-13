@@ -13,7 +13,7 @@ inform(x)
 warn(x)
 }
 \arguments{
-\item{x}{\code{character}.}
+\item{x}{\code{character} or \code{condition} (i.e. returned from \code{stop} or \code{warning}).}
 }
 \value{
 Console output, with invisible return of \code{x} input.
@@ -22,7 +22,7 @@ Console output, with invisible return of \code{x} input.
 Signal an error, warning, or message with cli formatting
 }
 \note{
-Updated 2021-07-12.
+Updated 2021-08-13.
 }
 \examples{
 x <- "hello world"
@@ -36,8 +36,7 @@ inform(x)
 }
 \seealso{
 \itemize{
-\item \code{\link[cli:cli_abort]{cli::cli_abort()}}.
-\item \code{\link[cli:cli_abort]{cli::cli_inform()}}.
-\item \code{\link[cli:cli_abort]{cli::cli_warn()}}.
+\item \code{\link[cli:cli_abort]{cli::cli_abort()}}, \code{\link[cli:cli_abort]{cli::cli_inform()}}, \code{\link[cli:cli_abort]{cli::cli_warn()}}.
+\item \code{simpleCondition()}, \code{simpleError()}, \code{simpleWarning()}, \code{simpleMessage()}.
 }
 }
