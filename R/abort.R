@@ -4,7 +4,7 @@
 #' @note Updated 2021-08-13.
 #'
 #' @param x `character` or `condition` (i.e. returned from `stop` or `warning`).
-#' @param `.call` `logical(1)`.
+#' @param `call` `logical(1)`.
 #'   Include call information in the return message.
 #'
 #' @return Console output, with invisible return of `x` input.
@@ -28,8 +28,8 @@ NULL
 
 #' @rdname abort
 #' @export
-abort <- function(x, .call = TRUE) {
-    traceLevel <- ifelse(test = .call, yes = "full", no = "none")
+abort <- function(x, call = TRUE) {
+    traceLevel <- ifelse(test = call, yes = "full", no = "none")
     options("rlang_backtrace_on_error" = traceLevel)
     if (is(x, "condition")) {
         x <- x[["message"]]

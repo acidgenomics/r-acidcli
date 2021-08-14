@@ -1,3 +1,11 @@
+## AcidCLI 0.1.4 (2021-08-14)
+
+### Minor changes
+
+- `abort`: Added `call` argument (enabled by default), which allows for setting
+  of verbosity in return -- e.g. whether to return backtrace or not. This
+  functions similar to the `.call` argument defined in base `stop` function.
+
 ## AcidCLI 0.1.3 (2021-08-13)
 
 ### Minor changes

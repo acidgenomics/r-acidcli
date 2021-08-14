@@ -6,7 +6,7 @@
 \alias{warn}
 \title{Signal an error, warning, or message with cli formatting}
 \usage{
-abort(x, .call = TRUE)
+abort(x, call = TRUE)
 
 inform(x)
 
@@ -15,7 +15,7 @@ warn(x)
 \arguments{
 \item{x}{\code{character} or \code{condition} (i.e. returned from \code{stop} or \code{warning}).}
 
-\item{`.call`}{\code{logical(1)}.
+\item{`call`}{\code{logical(1)}.
 Include call information in the return message.}
 }
 \value{
