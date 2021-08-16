@@ -15,7 +15,7 @@ warn(x)
 \arguments{
 \item{x}{\code{character} or \code{condition} (i.e. returned from \code{stop} or \code{warning}).}
 
-\item{`call`}{\code{logical(1)}.
+\item{call}{\code{logical(1)}.
 Include call information in the return message.}
 }
 \value{
