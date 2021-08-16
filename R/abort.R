@@ -4,7 +4,7 @@
 #' @note Updated 2021-08-13.
 #'
 #' @param x `character` or `condition` (i.e. returned from `stop` or `warning`).
-#' @param `call` `logical(1)`.
+#' @param call `logical(1)`.
 #'   Include call information in the return message.
 #'
 #' @return Console output, with invisible return of `x` input.
