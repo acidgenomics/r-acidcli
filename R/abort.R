@@ -1,7 +1,7 @@
 #' Signal an error, warning, or message with cli formatting
 #'
 #' @name abort
-#' @note Updated 2021-08-13.
+#' @note Updated 2021-08-18.
 #'
 #' @param x `character` or `condition` (i.e. returned from `stop` or `warning`).
 #' @param call `logical(1)`.
@@ -10,7 +10,7 @@
 #' @return Console output, with invisible return of `x` input.
 #'
 #' @seealso
-#' - [cli::cli_abort()], [cli::cli_inform()], [cli::cli_warn()].
+#' - cli::cli_abort(), cli::cli_inform(), cli::cli_warn().
 #' - `simpleCondition()`, `simpleError()`, `simpleWarning()`, `simpleMessage()`.
 #'
 #' @examples
@@ -26,6 +26,21 @@ NULL
 
 
 
+#' Split line breaks into a vector
+#'
+#' @note Updated 2021-08-18.
+#' @noRd
+.splitLineBreaks <- function(x) {
+    if (!any(grepl(pattern = "\n", x = x))) {
+        return(x)
+    }
+    x <- strsplit(x = x, split = "\n", fixed = TRUE)
+    x <- unlist(x, recursive = TRUE, use.names = FALSE)
+    x
+}
+
+
+
 #' @rdname abort
 #' @export
 abort <- function(x, call = TRUE) {
@@ -35,7 +50,7 @@ abort <- function(x, call = TRUE) {
         x <- x[["message"]]
     }
     assert(isCharacter(x))
-    x <- paste(x, collapse = "\n")
+    x <- .splitLineBreaks(x)
     cli_abort(x)
 }
 
@@ -48,7 +63,8 @@ inform <- function(x) {
         x <- x[["message"]]
     }
     assert(isCharacter(x))
-    lapply(X = x, FUN = cli_inform)
+    x <- .splitLineBreaks(x)
+    cli_inform(x)
     invisible(x)
 }
 
@@ -61,6 +77,7 @@ warn <- function(x) {
         x <- x[["message"]]
     }
     assert(isCharacter(x))
-    lapply(X = x, FUN = cli_warn)
+    x <- .splitLineBreaks(x)
+    cli_warn(x)
     invisible(x)
 }
