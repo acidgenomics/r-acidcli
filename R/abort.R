@@ -10,8 +10,13 @@
 #' @return Console output, with invisible return of `x` input.
 #'
 #' @seealso
-#' - cli::cli_abort(), cli::cli_inform(), cli::cli_warn().
-#' - `simpleCondition()`, `simpleError()`, `simpleWarning()`, `simpleMessage()`.
+#' - `cli::cli_abort()`.
+#' - `cli::cli_inform()`.
+#' - `cli::cli_warn()`.
+#' - `simpleCondition()`.
+#' - `simpleError()`.
+#' - `simpleWarning()`.
+#' - `simpleMessage()`.
 #'
 #' @examples
 #' x <- "hello world"
@@ -23,21 +28,6 @@
 #' })
 #' inform(x)
 NULL
-
-
-
-#' Split line breaks into a vector
-#'
-#' @note Updated 2021-08-18.
-#' @noRd
-.splitLineBreaks <- function(x) {
-    if (!any(grepl(pattern = "\n", x = x))) {
-        return(x)
-    }
-    x <- strsplit(x = x, split = "\n", fixed = TRUE)
-    x <- unlist(x, recursive = TRUE, use.names = FALSE)
-    x
-}
 
 
 

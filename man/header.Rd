@@ -43,6 +43,8 @@ h2("Level 2")
 }
 \seealso{
 \itemize{
-\item \code{\link[cli:cli_h1]{cli::cli_h1()}}, \code{\link[cli:cli_h1]{cli::cli_h2()}}, \code{\link[cli:cli_h1]{cli::cli_h3()}}.
+\item \code{cli::cli_h1()}.
+\item \code{cli::cli_h2()}.
+\item \code{cli::cli_h3()}.
 }
 }

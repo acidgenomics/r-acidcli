@@ -8,7 +8,9 @@
 #' @return Console output, with invisible return of `x` input.
 #'
 #' @seealso
-#' - [cli::cli_h1()], [cli::cli_h2()], [cli::cli_h3()].
+#' - `cli::cli_h1()`.
+#' - `cli::cli_h2()`.
+#' - `cli::cli_h3()`.
 #'
 #' @examples
 #' h1("Level 1")
