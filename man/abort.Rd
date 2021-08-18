@@ -39,7 +39,12 @@ inform(x)
 }
 \seealso{
 \itemize{
-\item cli::cli_abort(), cli::cli_inform(), cli::cli_warn().
-\item \code{simpleCondition()}, \code{simpleError()}, \code{simpleWarning()}, \code{simpleMessage()}.
+\item \code{cli::cli_abort()}.
+\item \code{cli::cli_inform()}.
+\item \code{cli::cli_warn()}.
+\item \code{simpleCondition()}.
+\item \code{simpleError()}.
+\item \code{simpleWarning()}.
+\item \code{simpleMessage()}.
 }
 }

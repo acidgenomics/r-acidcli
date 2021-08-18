@@ -1,17 +1,17 @@
 #' Alert messages
 #'
 #' @name alert
-#' @note Updated 2021-02-02.
+#' @note Updated 2021-08-18.
 #'
 #' @param x `character`.
 #'
 #' @return Console output, with invisible return of `x` input.
 #'
 #' @seealso
-#' - [cli::cli_alert()].
-#' - [cli::cli_alert_info()].
-#' - [cli::cli_alert_success()].
-#' - [cli::cli_alert_warning()].
+#' - `cli::cli_alert()`.
+#' - `cli::cli_alert_info()`.
+#' - `cli::cli_alert_success()`.
+#' - `cli::cli_alert_warning()`.
 #'
 #' @examples
 #' x <- "hello world"

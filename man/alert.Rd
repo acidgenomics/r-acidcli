@@ -28,7 +28,7 @@ Console output, with invisible return of \code{x} input.
 Alert messages
 }
 \note{
-Updated 2021-02-02.
+Updated 2021-08-18.
 }
 \examples{
 x <- "hello world"
@@ -40,9 +40,9 @@ alertWarning(x)
 }
 \seealso{
 \itemize{
-\item \code{\link[cli:cli_alert]{cli::cli_alert()}}.
-\item \code{\link[cli:cli_alert]{cli::cli_alert_info()}}.
-\item \code{\link[cli:cli_alert]{cli::cli_alert_success()}}.
-\item \code{\link[cli:cli_alert]{cli::cli_alert_warning()}}.
+\item \code{cli::cli_alert()}.
+\item \code{cli::cli_alert_info()}.
+\item \code{cli::cli_alert_success()}.
+\item \code{cli::cli_alert_warning()}.
 }
 }
