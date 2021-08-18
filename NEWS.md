@@ -1,3 +1,11 @@
+## AcidCLI 0.1.5 (2021-08-18)
+
+### Minor changes
+
+- `abort`, `inform`, `warn`: Improved line break handling (e.g. `"\n"`) inside
+  of calls, matching expected conventions in base `stop`, `message`, and
+  `warning` respectively.
+
 ## AcidCLI 0.1.4 (2021-08-14)
 
 ### Minor changes
