@@ -25,7 +25,7 @@ Console output, with invisible return of \code{x} input.
 Signal an error, warning, or message with cli formatting
 }
 \note{
-Updated 2021-08-13.
+Updated 2021-08-18.
 }
 \examples{
 x <- "hello world"
@@ -39,7 +39,7 @@ inform(x)
 }
 \seealso{
 \itemize{
-\item \code{\link[cli:cli_abort]{cli::cli_abort()}}, \code{\link[cli:cli_abort]{cli::cli_inform()}}, \code{\link[cli:cli_abort]{cli::cli_warn()}}.
+\item cli::cli_abort(), cli::cli_inform(), cli::cli_warn().
 \item \code{simpleCondition()}, \code{simpleError()}, \code{simpleWarning()}, \code{simpleMessage()}.
 }
 }
