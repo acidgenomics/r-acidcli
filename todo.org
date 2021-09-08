@@ -1,5 +1,3 @@
 #+TITLE: AcidCLI
 #+STARTUP: content
 * Development
-** TODO Replace all instances of `message` and `stop` with AcidCLI wrapped
-   variants that support better styling.
