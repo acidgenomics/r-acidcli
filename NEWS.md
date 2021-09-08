@@ -1,3 +1,10 @@
+## AcidCLI 0.1.6 (2021-09-08)
+
+### Minor changes
+
+- `toInlineString`: Improved default values for `n` (now 5) and `class`
+  (now `"val"` instead of `"var"`).
+
 ## AcidCLI 0.1.5 (2021-08-18)
 
 ### Minor changes
