@@ -1,9 +1,3 @@
-## FIXME Consider changing "var" to "val" by default.
-## FIXME Change "n" to default to "5" here.
-## FIXME Need to ensure this handles named input correctly.
-
-
-
 ## https://cli.r-lib.org/reference/inline-markup.html
 ## Updated 2021-09-08.
 .inlineClasses <- c(
@@ -54,6 +48,7 @@ toInlineString <- function(x, n = 5L, class = "var") {
     )
     class <- match.arg(class, choices = .inlineClasses)
     truncate <- length(x) > n
+    x <- unname(x)
     x <- head(x, n = n)
     x <- paste0("{.", class, " ", x, "}")
     x <- paste(x, collapse = ", ")
