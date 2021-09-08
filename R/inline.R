@@ -1,6 +1,37 @@
+## FIXME Consider changing "var" to "val" by default.
+## FIXME Change "n" to default to "5" here.
+## FIXME Need to ensure this handles named input correctly.
+
+
+
+## https://cli.r-lib.org/reference/inline-markup.html
+## Updated 2021-09-08.
+.inlineClasses <- c(
+    "arg",     # for a function argument.
+    "cls",     # for an S3, S4, R6 or other class name.
+    "code",    # for a piece of code.
+    "dd",      # is used for the descriptions in a definition list.
+    "dt",      # is used for the terms in a definition list.
+    "email",   # for an email address.
+    "emph",    # for emphasized text.
+    "envvar",  # for the name of an environment variable.
+    "field",   # for a generic field, e.g. in a named list.
+    "file",    # for a file name.
+    "fun",     # for a function name.
+    "key",     # for a keyboard key.
+    "path",    # for a path (essentially the same as file).
+    "pkg",     # for a package name.
+    "strong",  # for strong importance.
+    "url",     # for a URL.
+    "val",     # for a generic "value".
+    "var"      # for a variable name.
+)
+
+
+
 #' Convert input to inline class string
 #'
-#' @note Updated 2021-02-02.
+#' @note Updated 2021-09-08.
 #' @export
 #'
 #' @param x `character`.
@@ -15,12 +46,13 @@
 #' x <- c("aaa", "bbb", "ccc", "ddd")
 #' x <- toInlineString(x, n = 3L)
 #' x
-toInlineString <- function(x, n = Inf, class = "var") {
+toInlineString <- function(x, n = 5L, class = "var") {
     assert(
         isCharacter(x),
         isInt(n),
-        isString(class)
+        isPositive(n)
     )
+    class <- match.arg(class, choices = .inlineClasses)
     truncate <- length(x) > n
     x <- head(x, n = n)
     x <- paste0("{.", class, " ", x, "}")

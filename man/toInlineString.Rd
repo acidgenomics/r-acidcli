@@ -4,7 +4,7 @@
 \alias{toInlineString}
 \title{Convert input to inline class string}
 \usage{
-toInlineString(x, n = Inf, class = "var")
+toInlineString(x, n = 5L, class = "var")
 }
 \arguments{
 \item{x}{\code{character}.}
@@ -22,7 +22,7 @@ Inline style class.}
 Convert input to inline class string
 }
 \note{
-Updated 2021-02-02.
+Updated 2021-09-08.
 }
 \examples{
 x <- c("aaa", "bbb", "ccc", "ddd")
