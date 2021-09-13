@@ -1,3 +1,10 @@
+## AcidCLI 0.1.7 (2021-09-13)
+
+### Minor changes
+
+- `toInlineString`: Need to fix default value of `class`, which should be
+  `"val"` instead of `"var"`.
+
 ## AcidCLI 0.1.6 (2021-09-08)
 
 ### Minor changes

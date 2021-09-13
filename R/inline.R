@@ -25,7 +25,7 @@
 
 #' Convert input to inline class string
 #'
-#' @note Updated 2021-09-08.
+#' @note Updated 2021-09-13.
 #' @export
 #'
 #' @param x `character`.
@@ -40,7 +40,7 @@
 #' x <- c("aaa", "bbb", "ccc", "ddd")
 #' x <- toInlineString(x, n = 3L)
 #' x
-toInlineString <- function(x, n = 5L, class = "var") {
+toInlineString <- function(x, n = 5L, class = "val") {
     assert(
         isCharacter(x),
         isInt(n),
