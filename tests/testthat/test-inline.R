@@ -11,7 +11,8 @@ test_that("toInlineString", {
     expect_identical(
         object = toInlineString(
             x = c("aaa", "bbb", "ccc"),
-            n = 2L
+            n = 2L,
+            class = "var"
         ),
         expected = "{.var aaa}, {.var bbb}..."
     )
