@@ -21,7 +21,7 @@
 separator <- function(
     sep = "=",
     times = min(c(
-        getOption("width", default = 72L),
+        getOption(x = "width", default = 72L),
         72L
     ))
 ) {
