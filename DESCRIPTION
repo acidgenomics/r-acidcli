@@ -1,8 +1,8 @@
 Package: AcidCLI
 Title: Acid Genomics Command Line Interface
 Description: Command line interface helpers for Acid Genomics packages.
-Version: 0.1.7
-Date: 2020-09-13
+Version: 0.1.8.9000
+Date: 2020-10-14
 Authors@R: c(
     person(
         "Michael", "Steinbaugh",
@@ -24,7 +24,7 @@ Depends: R (>= 4.0)
 Imports:
     cli (>= 3.0.1),
     crayon (>= 1.4.1),
-    goalie (>= 0.5.4),
+    goalie (>= 0.6.0),
     methods,
     utils
 Suggests:
