@@ -20,7 +20,7 @@ URL:
 BugReports: https://github.com/acidgenomics/r-acidcli/issues/
 License: AGPL-3
 Encoding: UTF-8
-Depends: R (>= 4.0)
+Depends: R (>= 4.1)
 Imports:
     cli (>= 3.0.1),
     crayon (>= 1.4.1),
