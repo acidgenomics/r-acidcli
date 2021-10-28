@@ -1,5 +1,9 @@
 ## AcidCLI 0.1.8 (UNRELEASED)
 
+### Minor changes
+
+- Updated R dependency to 4.1, matching Bioconductor 3.14 release.
+
 ## AcidCLI 0.1.7 (2021-09-13)
 
 ### Minor changes
