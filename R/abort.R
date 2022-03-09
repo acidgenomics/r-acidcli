@@ -1,7 +1,7 @@
 #' Signal an error, warning, or message with cli formatting
 #'
 #' @name abort
-#' @note Updated 2021-08-18.
+#' @note Updated 2022-03-09.
 #'
 #' @param x `character` or `condition` (i.e. returned from `stop` or `warning`).
 #' @param call `logical(1)`.
@@ -34,14 +34,18 @@ NULL
 #' @rdname abort
 #' @export
 abort <- function(x, call = TRUE) {
-    traceLevel <- ifelse(test = call, yes = "full", no = "none")
+    traceLevel <- ifelse(
+        test = call,
+        yes = "full",
+        no = "none"
+    )
     options("rlang_backtrace_on_error" = traceLevel)
     if (is(x, "condition")) {
         x <- x[["message"]]
     }
     assert(isCharacter(x))
     x <- .splitLineBreaks(x)
-    cli_abort(x)
+    cli_abort(x, call = NULL)
 }
 
 
