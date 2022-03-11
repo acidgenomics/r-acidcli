@@ -1,8 +1,12 @@
-# AcidCLI 0.1.8 (UNRELEASED)
+# AcidCLI 0.2.0 (2022-03-11)
+
+Starting a new release series for 2022.
 
 ## Minor changes
 
 - Updated R dependency to 4.1, matching Bioconductor 3.14 release.
+- Updated other package dependencies: cli (3.2.0), crayon (1.5.0), and
+  goalie (0.6.0).
 
 # AcidCLI 0.1.7 (2021-09-13)
 
