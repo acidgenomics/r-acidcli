@@ -1,3 +1,9 @@
+# AcidCLI 0.2.1 (2022-04-29)
+
+## Minor changes
+
+- Updated R version dependency to 4.2.
+
 # AcidCLI 0.2.0 (2022-03-11)
 
 Starting a new release series for 2022.

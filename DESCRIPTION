@@ -1,8 +1,8 @@
 Package: AcidCLI
 Title: Acid Genomics Command Line Interface
 Description: Command line interface helpers for Acid Genomics packages.
-Version: 0.2.1.9000
-Date: 2022-04-28
+Version: 0.2.1
+Date: 2022-04-29
 Authors@R: c(
     person(
         "Michael", "Steinbaugh",
