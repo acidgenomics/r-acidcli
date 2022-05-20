@@ -40,7 +40,7 @@ abort <- function(x, call = TRUE) {
         yes = "full",
         no = "none"
     )
-    options("rlang_backtrace_on_error" = traceLevel)
+    options("rlang_backtrace_on_error" = traceLevel) # nolint
     if (is(x, "condition")) {
         x <- x[["message"]]
     }

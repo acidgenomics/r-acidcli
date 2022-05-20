@@ -1,5 +1,3 @@
-context("header")
-
 test_that("header", {
     for (fun in list(
         h1,

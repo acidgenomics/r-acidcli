@@ -1,5 +1,3 @@
-context("alert")
-
 test_that("alert", {
     for (fun in list(
         alert,
