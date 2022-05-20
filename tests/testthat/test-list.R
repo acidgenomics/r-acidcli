@@ -1,5 +1,3 @@
-context("list")
-
 test_that("definition list", {
     expect_message(
         object = dl(c(

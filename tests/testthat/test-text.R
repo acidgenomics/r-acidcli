@@ -1,5 +1,3 @@
-context("text")
-
 test_that("text", {
     expect_message(
         object = txt(c("XXX", "YYY")),

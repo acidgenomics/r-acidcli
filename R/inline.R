@@ -53,7 +53,7 @@ toInlineString <- function(x, n = 5L, class = "val") {
     x <- unname(x)
     x <- head(x, n = n)
     x <- paste0("{.", class, " ", x, "}")
-    x <- paste(x, collapse = ", ")
+    x <- toString(x)
     if (isTRUE(truncate)) {
         x <- paste0(x, "...")
     }

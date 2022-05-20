@@ -1,5 +1,3 @@
-context("abort")
-
 test_that("abort", {
     expect_error(
         object = abort(c("XXX", "YYY")),

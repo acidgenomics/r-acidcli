@@ -1,5 +1,3 @@
-context("inline")
-
 test_that("toInlineString", {
     expect_identical(
         object = toInlineString(
