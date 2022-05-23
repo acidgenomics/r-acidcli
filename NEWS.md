@@ -1,3 +1,9 @@
+# AcidCLI 0.2.2 (2022-05-23)
+
+## Minor changes
+
+- Updated lintr and testthat checks.
+
 # AcidCLI 0.2.1 (2022-04-29)
 
 ## Minor changes
