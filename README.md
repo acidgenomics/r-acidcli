@@ -18,5 +18,4 @@ install.packages(
 ```
 
 [acid genomics]: https://acidgenomics.com/
-[conda]: https://conda.io/
 [r]: https://www.r-project.org/
