@@ -1,3 +1,14 @@
+## FIXME Consider reformatting current h1 appearance.
+## Maybe something like:
+##
+## ###
+## <header text>
+## ###
+##
+## <...>
+
+
+
 #' Header level
 #'
 #' @name header
