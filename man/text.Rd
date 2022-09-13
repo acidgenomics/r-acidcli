@@ -21,12 +21,12 @@ CLI text
 }
 \section{Functions}{
 \itemize{
-\item \code{txt}: Print to screen, wrapping to screen with automatically.
+\item \code{txt()}: Print to screen, wrapping to screen with automatically.
 Exporting \code{txt} instead of \code{text} here, to avoid masking \code{stats::text}.
 
-\item \code{verbatim}: Print to screen, without any automatic wrapping.
-}}
+\item \code{verbatim()}: Print to screen, without any automatic wrapping.
 
+}}
 \note{
 Updated 2020-02-02.
 }
