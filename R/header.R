@@ -1,18 +1,7 @@
-## FIXME Consider reformatting current h1 appearance.
-## Maybe something like:
-##
-## ###
-## <header text>
-## ###
-##
-## <...>
-
-
-
 #' Header level
 #'
 #' @name header
-#' @note Updated 2021-02-02.
+#' @note Updated 2022-09-13.
 #'
 #' @param x `character`.
 #'
@@ -30,22 +19,9 @@ NULL
 
 
 
-#' Header emoji
-#'
-#' Currently using test tube.
-#'
-#' Alternates:
-#' - `\U1F422`: turtle (for koopa)
-#'
-#' @note Updated 2021-01-04.
-#' @noRd
-.emoji <- "\U1F9EA"
-
-
-
 #' Internal header generator
 #'
-#' @note Updated 2021-03-31.
+#' @note Updated 2022-09-13.
 #' @noRd
 .h <- function(x, level) {
     assert(isCharacter(x))
@@ -53,7 +29,7 @@ NULL
     lapply(
         X = x,
         FUN = function(x) {
-            txt(paste0(.emoji, " ", prefix, " ", x, "\n"))
+            txt(paste0(prefix, " ", x, "\n"))
         }
     )
     invisible(x)
@@ -64,8 +40,14 @@ NULL
 #' @rdname header
 #' @export
 h1 <- function(x) {
-    verbatim("\n")
-    .h(x = x, level = 1L)
+    verbatim(paste0("\n", cyan("===="), "\n"))
+    lapply(
+        X = x,
+        FUN = function(x) {
+            txt(paste0(x, "\n"))
+        }
+    )
+    verbatim(paste0(cyan("===="), "\n\n"))
 }
 
 

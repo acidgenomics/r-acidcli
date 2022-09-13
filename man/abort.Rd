@@ -25,7 +25,7 @@ Console output, with invisible return of \code{x} input.
 Signal an error, warning, or message with cli formatting
 }
 \note{
-Updated 2021-08-18.
+Updated 2022-03-09.
 }
 \examples{
 x <- "hello world"
