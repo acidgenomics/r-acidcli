@@ -1,7 +1,7 @@
 #' Header level
 #'
 #' @name header
-#' @note Updated 2022-09-13.
+#' @note Updated 2022-10-20.
 #'
 #' @param x `character`.
 #'
@@ -40,14 +40,25 @@ NULL
 #' @rdname header
 #' @export
 h1 <- function(x) {
-    verbatim(paste0("\n", cyan("===="), "\n"))
+    sep <- paste0(
+        rep(
+            x = ifelse(
+                test = is_utf8_output(),
+                yes = "\U2500",
+                no = "="
+            ),
+            times = getOption("width")
+        ),
+        collapse = ""
+    )
+    verbatim(paste0("\n", cyan(sep), "\n"))
     lapply(
         X = x,
         FUN = function(x) {
             txt(paste0(x, "\n"))
         }
     )
-    verbatim(paste0(cyan("===="), "\n\n"))
+    verbatim(paste0(cyan(sep), "\n\n"))
 }
 
 
