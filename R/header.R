@@ -21,11 +21,21 @@ NULL
 
 #' Internal header generator
 #'
-#' @note Updated 2022-09-13.
+#' @note Updated 2022-10-20.
 #' @noRd
 .h <- function(x, level) {
     assert(isCharacter(x))
-    prefix <- magenta(paste0(rep("#", level), collapse = ""))
+    prefix <- magenta(paste0(
+        rep(
+            x = ifelse(
+                test = is_utf8_output(),
+                yes = "\U2500",
+                no = "#"
+            ),
+            times = level
+        ),
+        collapse = ""
+    ))
     lapply(
         X = x,
         FUN = function(x) {
