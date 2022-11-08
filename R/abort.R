@@ -32,8 +32,6 @@ NULL
 
 
 
-## FIXME This isn't suppressing call correctly in koopa package.
-
 #' @rdname abort
 #' @export
 abort <- function(x, call = TRUE) {
