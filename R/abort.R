@@ -1,7 +1,7 @@
 #' Signal an error, warning, or message with cli formatting
 #'
 #' @name abort
-#' @note Updated 2022-03-09.
+#' @note Updated 2022-10-27.
 #'
 #' @param x `character` or `condition` (i.e. returned from `stop` or `warning`).
 #'
@@ -31,6 +31,8 @@
 NULL
 
 
+
+## FIXME This isn't suppressing call correctly in koopa package.
 
 #' @rdname abort
 #' @export
