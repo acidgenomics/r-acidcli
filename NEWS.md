@@ -1,5 +1,11 @@
 # Release notes
 
+## AcidCLI 0.2.5 (2022-11-08)
+
+Minor changes:
+
+- Tightened R 4.2 dependency requirements prior to bioconda recipe update.
+
 ## AcidCLI 0.2.4 (2022-10-20)
 
 Minor changes:
