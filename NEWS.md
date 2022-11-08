@@ -1,5 +1,12 @@
 # Release notes
 
+## AcidCLI 0.2.4 (2022-10-20)
+
+Minor changes:
+
+- `h1`: Reworked to span the width of console.
+- Improved fallback support for consoles without UTF-8 support.
+
 ## AcidCLI 0.2.3 (2022-09-13)
 
 Major changes:
