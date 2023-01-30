@@ -1,5 +1,15 @@
 # Release notes
 
+## AcidCLI 0.2.6 (2023-01-30)
+
+Minor changes:
+
+- `abort`, `inform`, `warn`: Reworked internal code and imports to ensure that
+  rlang is always installed. `cli` package update now makes `rlang` conditional,
+  which caused our error messages to fail in the rare edge case that the `rlang`
+  package is not available. We're now ensuring `rlang` gets imported directly
+  rather than relying on `cli` to avoid this situation.
+
 ## AcidCLI 0.2.5 (2022-11-08)
 
 Minor changes:
