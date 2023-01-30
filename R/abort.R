@@ -46,6 +46,7 @@ abort <- function(x, call = TRUE) {
     }
     assert(isCharacter(x))
     x <- .splitLineBreaks(x)
+    ## FIXME Only call this if rlang is installed...otherwise just use stop.
     cli_abort(x, call = NULL)
 }
 
