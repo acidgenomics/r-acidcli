@@ -40,17 +40,13 @@ abort <- function(x, call = TRUE) {
     }
     assert(isCharacter(x))
     x <- .splitLineBreaks(x)
-    if (isTRUE(requireNamespace("rlang", quietly = TRUE))) {
-        traceLevel <- ifelse(
-            test = call,
-            yes = "full",
-            no = "none"
-        )
-        options("rlang_backtrace_on_error" = traceLevel) # nolint
-        cli_abort(x, call = NULL)
-    } else {
-        stop(x, call. = call)
-    }
+    traceLevel <- ifelse(
+        test = call,
+        yes = "full",
+        no = "none"
+    )
+    options("rlang_backtrace_on_error" = traceLevel) # nolint
+    rlang::abort(format_message(x))
 }
 
 
@@ -63,7 +59,7 @@ inform <- function(x) {
     }
     assert(isCharacter(x))
     x <- .splitLineBreaks(x)
-    cli_inform(x)
+    rlang::inform(format_message(x))
     invisible(x)
 }
 
@@ -77,6 +73,6 @@ warn <- function(x) {
     }
     assert(isCharacter(x))
     x <- .splitLineBreaks(x)
-    cli_warn(x)
+    rlang::warn(format_message(x))
     invisible(x)
 }
