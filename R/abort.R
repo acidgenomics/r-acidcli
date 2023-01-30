@@ -1,7 +1,7 @@
 #' Signal an error, warning, or message with cli formatting
 #'
 #' @name abort
-#' @note Updated 2022-10-27.
+#' @note Updated 2023-01-30.
 #'
 #' @param x `character` or `condition` (i.e. returned from `stop` or `warning`).
 #'
@@ -35,19 +35,22 @@ NULL
 #' @rdname abort
 #' @export
 abort <- function(x, call = TRUE) {
-    traceLevel <- ifelse(
-        test = call,
-        yes = "full",
-        no = "none"
-    )
-    options("rlang_backtrace_on_error" = traceLevel) # nolint
     if (is(x, "condition")) {
         x <- x[["message"]]
     }
     assert(isCharacter(x))
     x <- .splitLineBreaks(x)
-    ## FIXME Only call this if rlang is installed...otherwise just use stop.
-    cli_abort(x, call = NULL)
+    if (isTRUE(requireNamespace("rlang", quietly = TRUE))) {
+        traceLevel <- ifelse(
+            test = call,
+            yes = "full",
+            no = "none"
+        )
+        options("rlang_backtrace_on_error" = traceLevel) # nolint
+        cli_abort(x, call = NULL)
+    } else {
+        stop(x, call. = call)
+    }
 }
 
 
