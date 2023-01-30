@@ -26,6 +26,7 @@ Imports:
     crayon (>= 1.5.2),
     goalie (>= 0.6.7),
     methods,
+    rlang (>= 1.0.6),
     utils
 Suggests:
     testthat (>= 3.1.6)
