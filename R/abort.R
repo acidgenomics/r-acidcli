@@ -1,7 +1,7 @@
 #' Signal an error, warning, or message with cli formatting
 #'
 #' @name abort
-#' @note Updated 2023-01-30.
+#' @note Updated 2023-02-08.
 #'
 #' @param x `character` or `condition` (i.e. returned from `stop` or `warning`).
 #'
@@ -46,7 +46,11 @@ abort <- function(x, call = TRUE) {
         no = "none"
     )
     options("rlang_backtrace_on_error" = traceLevel) # nolint
-    rlang::abort(format_message(x))
+    args <- list("message" = format_message(x))
+    if (isFALSE(call)) {
+        args <- append(args, list("call" = NULL))
+    }
+    do.call(what = rlang::abort, args = args)
 }
 
 
