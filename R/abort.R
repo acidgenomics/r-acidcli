@@ -48,7 +48,7 @@ abort <- function(x, call = TRUE) {
     options("rlang_backtrace_on_error" = traceLevel) # nolint
     args <- list("message" = format_message(x))
     if (isFALSE(call)) {
-        args <- append(args, list("call" = NULL))
+        args <- append(args, values = list("call" = NULL))
     }
     do.call(what = rlang::abort, args = args)
 }
