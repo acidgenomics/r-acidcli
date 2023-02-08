@@ -1,5 +1,13 @@
 # Release notes
 
+## AcidCLI 0.2.7 (2023-02-08)
+
+Minor changes:
+
+- `abort`: Improved call suppression in error message header when
+  `call = FALSE`. Need to pass `call = NULL` internally to rlang `abort` to
+  fix this.
+
 ## AcidCLI 0.2.6 (2023-01-30)
 
 Minor changes:
