@@ -1,5 +1,12 @@
 # Release notes
 
+## AcidCLI 0.2.8 (2023-08-09)
+
+Major changes:
+
+- Now requiring R 4.3.
+- `h1` no longer returns an extra line break under the bottom separator.
+
 ## AcidCLI 0.2.7 (2023-02-08)
 
 Minor changes:
