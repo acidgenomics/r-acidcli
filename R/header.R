@@ -1,7 +1,7 @@
 #' Header level
 #'
 #' @name header
-#' @note Updated 2022-10-20.
+#' @note Updated 2023-08-09.
 #'
 #' @param x `character`.
 #'
@@ -68,7 +68,7 @@ h1 <- function(x) {
             txt(paste0(x, "\n"))
         }
     )
-    verbatim(paste0(cyan(sep), "\n\n"))
+    verbatim(paste0(cyan(sep), "\n"))
 }
 
 
