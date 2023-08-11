@@ -1,5 +1,7 @@
 # AcidCLI
 
+![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-green.svg)
+
 Interative R command line interface toolkit for [Acid Genomics][] packages.
 
 ## Installation
