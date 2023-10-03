@@ -1,5 +1,11 @@
 # Release notes
 
+## AcidCLI 0.3.0 (2023-10-03)
+
+Major changes:
+
+- Starting a new release series, matching other Acid Genomics package updates.
+
 ## AcidCLI 0.2.8 (2023-08-09)
 
 Major changes:
