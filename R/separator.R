@@ -28,5 +28,11 @@ separator <- function(sep = "=",
         isString(sep), nchar(sep) == 1L,
         isInt(times)
     )
-    paste0(rep(x = sep, times = times), collapse = "")
+    ## nolint start
+    paste(
+        rep(x = sep, times = times),
+        sep = "",
+        collapse = ""
+    )
+    ## nolint end
 }

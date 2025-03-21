@@ -21,11 +21,12 @@ NULL
 
 #' Internal header generator
 #'
-#' @note Updated 2022-10-20.
+#' @note Updated 2025-03-21.
 #' @noRd
 .h <- function(x, level) {
     assert(isCharacter(x))
-    prefix <- magenta(paste0(
+    ## nolint start
+    prefix <- paste(
         rep(
             x = ifelse(
                 test = is_utf8_output(),
@@ -34,8 +35,11 @@ NULL
             ),
             times = level
         ),
+        sep = "",
         collapse = ""
-    ))
+    )
+    ## nolint end
+    prefix <- magenta(prefix)
     lapply(
         X = x,
         FUN = function(x) {
@@ -50,7 +54,8 @@ NULL
 #' @rdname header
 #' @export
 h1 <- function(x) {
-    sep <- paste0(
+    ## nolint start
+    sep <- paste(
         rep(
             x = ifelse(
                 test = is_utf8_output(),
@@ -59,8 +64,10 @@ h1 <- function(x) {
             ),
             times = getOption("width")
         ),
+        sep = "",
         collapse = ""
     )
+    ## nolint end
     verbatim(paste0("\n", cyan(sep), "\n"))
     lapply(
         X = x,
