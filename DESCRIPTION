@@ -1,8 +1,8 @@
 Package: AcidCLI
 Title: Acid Genomics Command Line Interface
 Description: Command line interface helpers for Acid Genomics packages.
-Version: 0.3.0
-Date: 2023-10-03
+Version: 0.3.1
+Date: 2025-03-21
 Authors@R: c(
     person(
         "Michael", "Steinbaugh",
@@ -20,19 +20,19 @@ URL:
 BugReports: https://github.com/acidgenomics/r-acidcli/issues/
 License: AGPL-3
 Encoding: UTF-8
-Depends: R (>= 4.3)
+Depends: R (>= 4.0)
 Imports:
-    cli (>= 3.6.1),
-    crayon (>= 1.5.2),
-    goalie (>= 0.7.0),
-    rlang (>= 1.1.1),
+    cli,
+    crayon,
+    goalie,
     methods,
+    rlang,
     utils
 Suggests:
-    testthat (>= 3.1.10)
+    testthat
 Additional_repositories: https://r.acidgenomics.com
 Config/testthat/edition: 3
 Config/testthat/parallel: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 biocViews: Infrastructure
