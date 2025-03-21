@@ -1,5 +1,12 @@
 # Release notes
 
+## AcidCLI 0.3.1 (2025-03-21)
+
+Minor changes:
+
+- Relaxed R dependency to 4.0 for better backwards compatibility.
+- Updated lintr configuration and checks.
+
 ## AcidCLI 0.3.0 (2023-10-03)
 
 Major changes:
