@@ -22,7 +22,6 @@
 )
 
 
-
 #' Convert input to inline class string
 #'
 #' @note Updated 2021-09-13.

@@ -19,13 +19,16 @@
 #'
 #' @examples
 #' separator(sep = "=", times = 10L)
-separator <- function(sep = "=",
-                      times = min(c(
-                          getOption(x = "width", default = 72L),
-                          72L
-                      ))) {
+separator <- function(
+    sep = "=",
+    times = min(c(
+        getOption(x = "width", default = 72L),
+        72L
+    ))
+) {
     assert(
-        isString(sep), nchar(sep) == 1L,
+        isString(sep),
+        nchar(sep) == 1L,
         isInt(times)
     )
     ## nolint start

@@ -18,7 +18,6 @@
 NULL
 
 
-
 #' Internal header generator
 #'
 #' @note Updated 2025-03-21.
@@ -50,7 +49,6 @@ NULL
 }
 
 
-
 #' @rdname header
 #' @export
 h1 <- function(x) {
@@ -79,13 +77,11 @@ h1 <- function(x) {
 }
 
 
-
 #' @rdname header
 #' @export
 h2 <- function(x) {
     .h(x = x, level = 2L)
 }
-
 
 
 #' @rdname header
@@ -95,13 +91,11 @@ h3 <- function(x) {
 }
 
 
-
 #' @rdname header
 #' @export
 h4 <- function(x) {
     .h(x = x, level = 4L)
 }
-
 
 
 #' @rdname header
@@ -111,13 +105,11 @@ h5 <- function(x) {
 }
 
 
-
 #' @rdname header
 #' @export
 h6 <- function(x) {
     .h(x = x, level = 6L)
 }
-
 
 
 #' @rdname header

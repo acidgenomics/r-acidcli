@@ -31,7 +31,6 @@
 NULL
 
 
-
 #' @rdname abort
 #' @export
 abort <- function(x, call = TRUE) {
@@ -54,7 +53,6 @@ abort <- function(x, call = TRUE) {
 }
 
 
-
 #' @rdname abort
 #' @export
 inform <- function(x) {
@@ -66,7 +64,6 @@ inform <- function(x) {
     rlang::inform(format_message(x))
     invisible(x)
 }
-
 
 
 #' @rdname abort
