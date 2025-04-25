@@ -1,4 +1,8 @@
-# Release notes
+## AcidCLI 0.3.2 (2025-04-24)
+
+Minor changes:
+
+- Reformatted code using `air format`.
 
 ## AcidCLI 0.3.1 (2025-03-21)
 
