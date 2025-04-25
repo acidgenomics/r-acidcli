@@ -23,7 +23,6 @@
 NULL
 
 
-
 #' @rdname alert
 #' @export
 alert <- function(x) {
@@ -31,7 +30,6 @@ alert <- function(x) {
     lapply(X = x, FUN = cli_alert)
     invisible(x)
 }
-
 
 
 #' @rdname alert
@@ -43,7 +41,6 @@ alertDanger <- function(x) {
 }
 
 
-
 #' @rdname alert
 #' @export
 alertInfo <- function(x) {
@@ -53,7 +50,6 @@ alertInfo <- function(x) {
 }
 
 
-
 #' @rdname alert
 #' @export
 alertSuccess <- function(x) {
@@ -61,7 +57,6 @@ alertSuccess <- function(x) {
     lapply(X = x, FUN = cli_alert_success)
     invisible(x)
 }
-
 
 
 #' @rdname alert

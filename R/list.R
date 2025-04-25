@@ -14,7 +14,6 @@
 NULL
 
 
-
 #' @rdname list
 #' @export
 dl <- function(x) {
@@ -30,7 +29,6 @@ dl <- function(x) {
 }
 
 
-
 #' @rdname list
 #' @export
 ol <- function(x) {
@@ -41,7 +39,6 @@ ol <- function(x) {
     cli_end()
     invisible(x)
 }
-
 
 
 #' @rdname list

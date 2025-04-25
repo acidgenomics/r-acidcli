@@ -5,7 +5,6 @@
 "_PACKAGE"
 
 
-
 ## Standard functions ==========================================================
 
 #' @importFrom cli cli_abort cli_alert cli_alert_danger cli_alert_info

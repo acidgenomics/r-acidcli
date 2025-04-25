@@ -16,7 +16,6 @@
 NULL
 
 
-
 #' @describeIn text Print to screen, wrapping to screen with automatically.
 #' Exporting `txt` instead of `text` here, to avoid masking `stats::text`.
 #' @export
@@ -25,7 +24,6 @@ txt <- function(x) {
     cli_text(x)
     invisible(x)
 }
-
 
 
 #' @describeIn text Print to screen, without any automatic wrapping.
