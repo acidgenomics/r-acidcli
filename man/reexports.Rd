@@ -18,6 +18,6 @@ These objects are imported from other packages. Follow the links
 below to see their documentation.
 
 \describe{
-  \item{crayon}{\code{\link[crayon:crayon]{blue}}, \code{\link[crayon:crayon]{bold}}, \code{\link[crayon:crayon]{cyan}}, \code{\link[crayon:crayon]{green}}, \code{\link[crayon:crayon]{magenta}}, \code{\link[crayon:crayon]{red}}, \code{\link[crayon:crayon]{underline}}, \code{\link[crayon:crayon]{yellow}}}
+  \item{crayon}{\code{\link[crayon:blue]{blue()}}, \code{\link[crayon:bold]{bold()}}, \code{\link[crayon:cyan]{cyan()}}, \code{\link[crayon:green]{green()}}, \code{\link[crayon:magenta]{magenta()}}, \code{\link[crayon:red]{red()}}, \code{\link[crayon:underline]{underline()}}, \code{\link[crayon:yellow]{yellow()}}}
 }}
 
